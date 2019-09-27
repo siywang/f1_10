@@ -67,8 +67,8 @@ set(siyanwang_reactive_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(siyanwang_reactive_SOURCE_PREFIX /home/siyan/SiyanWang_ws/src/siyanwang_reactive)
-  set(siyanwang_reactive_DEVEL_PREFIX /home/siyan/SiyanWang_ws/src/siyanwang_reactive/cmake-build-debug/devel)
+  set(siyanwang_reactive_SOURCE_PREFIX /home/siyan/SiyanWang_ws/src/f1_10/siyanwang_reactive)
+  set(siyanwang_reactive_DEVEL_PREFIX /home/siyan/SiyanWang_ws/src/f1_10/siyanwang_reactive/cmake-build-debug/devel)
   set(siyanwang_reactive_INSTALL_PREFIX "")
   set(siyanwang_reactive_PREFIX ${siyanwang_reactive_DEVEL_PREFIX})
 else()

@@ -67,8 +67,8 @@ set(siyanwang_reactive_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(siyanwang_reactive_SOURCE_PREFIX /home/siyan/SiyanWang_ws/src/siyanwang_reactive)
-  set(siyanwang_reactive_DEVEL_PREFIX /home/siyan/SiyanWang_ws/src/siyanwang_reactive/cmake-build-debug/devel)
+  set(siyanwang_reactive_SOURCE_PREFIX /home/siyan/SiyanWang_ws/src/f1_10/siyanwang_reactive)
+  set(siyanwang_reactive_DEVEL_PREFIX /home/siyan/SiyanWang_ws/src/f1_10/siyanwang_reactive/cmake-build-debug/devel)
   set(siyanwang_reactive_INSTALL_PREFIX "")
   set(siyanwang_reactive_PREFIX ${siyanwang_reactive_DEVEL_PREFIX})
 else()
@@ -110,7 +110,7 @@ if(NOT " " STREQUAL " ")
         message(FATAL_ERROR "Project 'siyanwang_reactive' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'siyanwang_reactive' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/siyan/SiyanWang_ws/src/siyanwang_reactive/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'siyanwang_reactive' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/siyan/SiyanWang_ws/src/f1_10/siyanwang_reactive/${idir}'.  ${_report}")
     endif()
     _list_append_unique(siyanwang_reactive_INCLUDE_DIRS ${include})
   endforeach()
@@ -131,7 +131,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/siyan/SiyanWang_ws/src/siyanwang_reactive/cmake-build-debug/devel/lib;/home/siyan/SiyanWang_ws/devel/lib;/home/siyan/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/siyan/SiyanWang_ws/src/f1_10/siyanwang_reactive/cmake-build-debug/devel/lib;/home/siyan/SiyanWang_ws/devel/lib;/home/siyan/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
