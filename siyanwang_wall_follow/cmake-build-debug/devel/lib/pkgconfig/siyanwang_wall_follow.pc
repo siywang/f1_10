@@ -1,0 +1,8 @@
+prefix=/home/siyan/SiyanWang_ws/src/siyanwang_wall_follow/cmake-build-debug/devel
+
+Name: siyanwang_wall_follow
+Description: Description of siyanwang_wall_follow
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/siyan/SiyanWang_ws/src/siyanwang_wall_follow/cmake-build-debug/devel/lib 
+Requires: 

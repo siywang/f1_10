@@ -1,0 +1,8 @@
+prefix=/home/siyan/SiyanWang_ws/src/siyanwang_reactive/cmake-build-debug/devel
+
+Name: siyanwang_reactive
+Description: Description of siyanwang_reactive
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/siyan/SiyanWang_ws/src/siyanwang_reactive/cmake-build-debug/devel/lib 
+Requires: 

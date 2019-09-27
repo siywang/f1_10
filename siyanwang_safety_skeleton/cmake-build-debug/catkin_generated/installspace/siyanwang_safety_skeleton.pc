@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: siyanwang_safety_skeleton
+Description: Description of siyanwang_safety_skeleton
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 

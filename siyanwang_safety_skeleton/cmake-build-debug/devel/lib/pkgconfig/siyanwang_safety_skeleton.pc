@@ -1,0 +1,8 @@
+prefix=/home/siyan/SiyanWang_ws/src/siyanwang_safety_skeleton/cmake-build-debug/devel
+
+Name: siyanwang_safety_skeleton
+Description: Description of siyanwang_safety_skeleton
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/siyan/SiyanWang_ws/src/siyanwang_safety_skeleton/cmake-build-debug/devel/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: siyanwang_wall_follow
+Description: Description of siyanwang_wall_follow
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 
