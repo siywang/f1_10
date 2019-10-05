@@ -1,0 +1,98 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/siyan/SiyanWang_ws/src/f1_10/siyanwang_scan_matching/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2132e/fast 
+/usr/bin/make -f CMakeFiles/cmTC_2132e.dir/build.make CMakeFiles/cmTC_2132e.dir/build
+make[1]: Entering directory '/home/siyan/SiyanWang_ws/src/f1_10/siyanwang_scan_matching/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2132e.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_2132e.dir/CheckSymbolExists.c.o   -c /home/siyan/SiyanWang_ws/src/f1_10/siyanwang_scan_matching/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_2132e
+/home/siyan/clion-2019.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2132e.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_2132e.dir/CheckSymbolExists.c.o  -o cmTC_2132e 
+CMakeFiles/cmTC_2132e.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_2132e.dir/build.make:86: recipe for target 'cmTC_2132e' failed
+make[1]: *** [cmTC_2132e] Error 1
+make[1]: Leaving directory '/home/siyan/SiyanWang_ws/src/f1_10/siyanwang_scan_matching/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_2132e/fast' failed
+make: *** [cmTC_2132e/fast] Error 2
+
+File /home/siyan/SiyanWang_ws/src/f1_10/siyanwang_scan_matching/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/siyan/SiyanWang_ws/src/f1_10/siyanwang_scan_matching/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_90f02/fast 
+/usr/bin/make -f CMakeFiles/cmTC_90f02.dir/build.make CMakeFiles/cmTC_90f02.dir/build
+make[1]: Entering directory '/home/siyan/SiyanWang_ws/src/f1_10/siyanwang_scan_matching/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_90f02.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_90f02.dir/CheckFunctionExists.c.o   -c /home/siyan/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_90f02
+/home/siyan/clion-2019.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90f02.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_90f02.dir/CheckFunctionExists.c.o  -o cmTC_90f02 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_90f02.dir/build.make:86: recipe for target 'cmTC_90f02' failed
+make[1]: *** [cmTC_90f02] Error 1
+make[1]: Leaving directory '/home/siyan/SiyanWang_ws/src/f1_10/siyanwang_scan_matching/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_90f02/fast' failed
+make: *** [cmTC_90f02/fast] Error 2
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/siyan/SiyanWang_ws/src/f1_10/siyanwang_scan_matching/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1c71e/fast && /usr/bin/make -f CMakeFiles/cmTC_1c71e.dir/build.make CMakeFiles/cmTC_1c71e.dir/build
+make[1]: Entering directory '/home/siyan/SiyanWang_ws/src/f1_10/siyanwang_scan_matching/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1c71e.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_1c71e.dir/src.c.o   -c /home/siyan/SiyanWang_ws/src/f1_10/siyanwang_scan_matching/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_1c71e
+/home/siyan/clion-2019.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c71e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_1c71e.dir/src.c.o  -o cmTC_1c71e 
+CMakeFiles/cmTC_1c71e.dir/src.c.o: In function `main':
+src.c:(.text+0x3c): undefined reference to `pthread_create'
+src.c:(.text+0x48): undefined reference to `pthread_detach'
+src.c:(.text+0x59): undefined reference to `pthread_join'
+src.c:(.text+0x6d): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1c71e.dir/build.make:86: recipe for target 'cmTC_1c71e' failed
+make[1]: *** [cmTC_1c71e] Error 1
+make[1]: Leaving directory '/home/siyan/SiyanWang_ws/src/f1_10/siyanwang_scan_matching/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_1c71e/fast' failed
+make: *** [cmTC_1c71e/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

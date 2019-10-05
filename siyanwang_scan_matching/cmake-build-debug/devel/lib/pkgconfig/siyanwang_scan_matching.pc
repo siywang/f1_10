@@ -1,0 +1,8 @@
+prefix=/home/siyan/SiyanWang_ws/src/f1_10/siyanwang_scan_matching/cmake-build-debug/devel
+
+Name: siyanwang_scan_matching
+Description: Description of siyanwang_scan_matching
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/siyan/SiyanWang_ws/src/f1_10/siyanwang_scan_matching/cmake-build-debug/devel/lib 
+Requires: nav_msgs roscpp rospy std_msgs

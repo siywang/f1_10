@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: scan_matching_skeleton
+Description: Description of scan_matching_skeleton
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: nav_msgs roscpp rospy std_msgs
