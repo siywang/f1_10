@@ -1,8 +1,0 @@
-prefix=/usr/local
-
-Name: siyanwang_reactive
-Description: Description of siyanwang_reactive
-Version: 0.0.0
-Cflags: 
-Libs: -L/usr/local/lib 
-Requires: 

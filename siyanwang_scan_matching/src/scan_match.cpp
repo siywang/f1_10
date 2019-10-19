@@ -21,7 +21,7 @@ const string& FRAME_POINTS = "laser";
 const float RANGE_LIMIT = 10.0;
 
 const float MAX_ITER = 2.0;
-const float MIN_INFO = 0.1;
+const float MIN_INFO =0.1;
 const float A = (1-MIN_INFO)/MAX_ITER/MAX_ITER;
 
 
@@ -86,9 +86,9 @@ class ScanProcessor {
         //************************************************ Find correspondence between points of the current and previous frames  *************** ////
         //******** getCorrespondence() function is the fast search function and getNaiveCorrespondence function is the naive search option **** ////
 
-        // getCorrespondence(prev_points, transformed_points, points, jump_table, corresponds, A*count*count+MIN_INFO);
+        getCorrespondence(prev_points, transformed_points, points, jump_table, corresponds, A*count*count+MIN_INFO);
 
-        getNaiveCorrespondence(prev_points, transformed_points, points, jump_table, corresponds, A*count*count+MIN_INFO);
+        //getNaiveCorrespondence(prev_points, transformed_points, points, jump_table, corresponds, A*count*count+MIN_INFO);
 
 
         prev_trans = curr_trans;
@@ -147,7 +147,7 @@ class ScanProcessor {
      msg.pose.orientation.y = q.y();
      msg.pose.orientation.z = q.z();
      msg.pose.orientation.w = q.w();
-     msg.header.frame_id = "laser";
+     msg.header.frame_id = "map"; //laser
      msg.header.stamp = ros::Time::now();
      pos_pub.publish(msg);
      tr.setOrigin(tf::Vector3(global_tf(0,2), global_tf(1,2), 0));

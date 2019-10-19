@@ -131,7 +131,7 @@ public:
 
         ignite.drive.steering_angle = angle;
 
-        ignite.drive.speed = 2.5;
+        ignite.drive.speed = 0.8;
 
         ROS_INFO_STREAM(angle);
 
