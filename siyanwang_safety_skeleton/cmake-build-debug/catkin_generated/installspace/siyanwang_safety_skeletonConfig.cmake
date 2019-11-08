@@ -67,8 +67,8 @@ set(siyanwang_safety_skeleton_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(siyanwang_safety_skeleton_SOURCE_PREFIX /home/siyan/SiyanWang_ws/src/siyanwang_safety_skeleton)
-  set(siyanwang_safety_skeleton_DEVEL_PREFIX /home/siyan/SiyanWang_ws/src/siyanwang_safety_skeleton/cmake-build-debug/devel)
+  set(siyanwang_safety_skeleton_SOURCE_PREFIX /home/siyan/SiyanWang_ws/src/f1_10/siyanwang_safety_skeleton)
+  set(siyanwang_safety_skeleton_DEVEL_PREFIX /home/siyan/SiyanWang_ws/src/f1_10/siyanwang_safety_skeleton/cmake-build-debug/devel)
   set(siyanwang_safety_skeleton_INSTALL_PREFIX "")
   set(siyanwang_safety_skeleton_PREFIX ${siyanwang_safety_skeleton_DEVEL_PREFIX})
 else()

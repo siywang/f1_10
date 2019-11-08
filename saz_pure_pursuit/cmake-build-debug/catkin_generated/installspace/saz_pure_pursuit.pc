@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: saz_pure_pursuit
+Description: Description of saz_pure_pursuit
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 

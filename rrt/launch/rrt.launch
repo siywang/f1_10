@@ -1,0 +1,15 @@
+<launch>
+  <!-- Parameters -->
+  <rosparam command="load" file="$(find rrt)/config/rrt_params.yaml" />
+  <env name="ROSCONSOLE_CONFIG_FILE" value="$(find f110_pure_pursuit)/config/rosconsole_config.conf"/>
+  
+  <!-- Map server -->
+  <arg name="map_file" default="$(find racecar_simulator)/maps/levine.yaml"/>
+
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+  <!-- nodes -->
+
+  <node pkg="rrt" name="rrt_node" type="rrt_node" output="screen"/>
+
+</launch>

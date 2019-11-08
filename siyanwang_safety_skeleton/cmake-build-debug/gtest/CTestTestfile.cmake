@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
 # Source directory: /usr/src/gmock
-# Build directory: /home/siyan/SiyanWang_ws/src/siyanwang_safety_skeleton/cmake-build-debug/gtest
+# Build directory: /home/siyan/SiyanWang_ws/src/f1_10/siyanwang_safety_skeleton/cmake-build-debug/gtest
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Listen to messages from joysicks -->
+  <node pkg="saz_pure_pursuit" name="pure_pursuit" type="pure_pursuit" respawn="true" output="screen">
+    <param name="look_ahead_distance" value = "0.8"/>
+    <param name="angle_factor" value = "0.15"/>
+    <param name="nominal_speed" value = "6"/>
+    <param name="angle_speed" value = "1.5"/>
+  </node>
+</launch>
