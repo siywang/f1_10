@@ -48,14 +48,14 @@ public:
         // n.param<float>("/pure_pursuit/nominal_speed", nominal_speed, 0.5);
         // n.param<float>("/pure_pursuit/angle_speed", angle_speed, 0.3);
 
-        //  waypoint_data = read_way_point_CSVfile("/home/anmol/anmol_kathail_ws/src/anmolk_pure_pursuit/gtpose.csv");
+        //  waypoint_data = read_way_point_CSVfile("/home/anmol/anmol_kathail_ws/src/anmolk_pure_pursuit/gtpose.csv//saz");
         // load the waypoints and simplify them
-        vector<vector<float>> waypoint_data_long = read_way_point_CSVfile("/home/siyan/SiyanWang_ws/src/f1_10/saz_pure_pursuit/saz.csv");
+        vector<vector<float>> waypoint_data_long = read_way_point_CSVfile("/home/siyan/SiyanWang_ws/src/f1_10/saz_pure_pursuit/gtpose.csv");
         waypoint_length = waypoint_data_long[0].size();
         vector<float> waypoint_data1;
         vector<float> waypoint_data2;
         vector<float> waypoint_data3;
-        for (int i = 0; i < waypoint_length; i+=10) {
+        for (int i = 0; i < waypoint_length; i+=250) {
             waypoint_data1.push_back(waypoint_data_long[0][i]);
             waypoint_data2.push_back(waypoint_data_long[1][i]);
             waypoint_data3.push_back(waypoint_data_long[2][i]);
@@ -107,7 +107,7 @@ public:
 		float distance_min = 10000;
 		float ind_min = 0;
         
-		for(int i = 0; i < waypoint_length; i += 1){
+		for(int i = 0; i < waypoint_length; i += 1){ //1
 		    float distance = sqrt( pow(currentX - (waypoint_data[0][i] - csv_offset_x), 2) + pow(currentY - (waypoint_data[1][i] - csv_offset_y), 2) );
 		    rot_waypoint_x = (waypoint_data[0][i] - currentX) * cos(-currentTheta) - (waypoint_data[1][i] - currentY) * sin(-currentTheta);
 		    rot_waypoint_y = (waypoint_data[0][i] - currentX) * sin(-currentTheta) + (waypoint_data[1][i] - currentY) * cos(-currentTheta);   
